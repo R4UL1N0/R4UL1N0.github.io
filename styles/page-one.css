@@ -1,5 +1,9 @@
 /* PAGE PARALLAX */
 
+* {
+    box-sizing: border-box;
+}
+
 .parallax {
     background-image: url('../assets/mountains.jpg');
     background-position: bottom;
@@ -47,12 +51,12 @@
     padding: 20px;
     display: flex;
     z-index: 10;
+    flex-direction: column;
+    align-items: center;
     position: absolute;
-    bottom: 0;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    /* background-color: white; */
-    border-radius: 50%;
+    bottom: 10%;
+    width: 100% !important;
+
 }
 
 
@@ -82,4 +86,67 @@
 }
 
 
-/* background-attachment: fixed; */
+#my-description {
+    min-height: 200px;
+    /* background-color: azure; */
+    width: 80%;
+    margin: 15px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 2%;
+    justify-content: space-around;
+}
+
+.circled-photo {
+    background-color: cadetblue;
+    background-image: url('../assets/foto/20230705_152138.jpg');
+    border: 3px solid white;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-y: center;
+    border-radius: 50%;
+    height: 150px;
+    width: 150px;
+}
+
+#description-text {
+    /* background-color: blue; */
+    height: 150px;
+    width: 80%;
+    display: grid;
+    grid-template-columns: 4fr 3fr;
+
+}
+
+#description-first {
+    /* background-color: aqua; */
+    border-right: 2px solid white;
+    padding: 15px;
+}
+
+#description-first p {
+    font-size: 1.5rem;
+    font-family: 'Rajdhani', 'Roboto';
+    color: white;
+    font-weight: 500;
+}
+
+#description-first p::before {
+    content: "* ";
+}
+#description-second {
+    /* background-color: coral; */
+    padding: 40px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    /* grid-template-rows: 1fr 1fr; */
+}
+
+.icon-social-media {
+    width: 70px;
+    height: 70px;
+
+}
+
+

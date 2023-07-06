@@ -3,21 +3,24 @@
 @import './styles/page-two.css';
 @import './styles/balls-menu.css';
 @import './styles/page-three.css';
+@import './styles/form-page.css';
 
 
-* {
+*, html {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-
 }
 
 body {
     margin: auto;
     background-color: white;
-    /* width: 100%; */
     height: 100vh;
+}
 
+.row {
+    display: flex;
+    flex-direction: row;
 }
 
 #btn-top {
@@ -38,16 +41,13 @@ body {
     height: 50px;
     text-align: center;
     transform: translate(-50%, -50%);
-    
   }
 
 #navbar {
     z-index: 1;
     height: 50px;
     padding: 30px;
-    
     width: 100%;
-    /* background-color: white; */
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -70,13 +70,6 @@ body {
     }
 }
 
-/* #navbar::after {
-    content: '';
-    height: 50px;
-    width: 100%; 
-    z-index: -1
-} */
-
 .balls-nav {
     display: flex;
     align-items: center;
@@ -96,16 +89,9 @@ body {
     background-color: black;
 }
 
-
-
 .page {
     height: 110vh;
 }
-
-
-
-
-
 
 .square {
     width: 5rem;
