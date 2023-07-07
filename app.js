@@ -1,7 +1,6 @@
 import { execTyping } from "./functions/typingFunction.js";
 import { animateBoxes } from "./functions/animateBoxes.js";
-import { runOnScrollPosition } from './functions/runOnScrollPosition.js'
-import { goTo } from './functions/goTo.js'
+
 
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -12,6 +11,7 @@ function initApp() {
     console.log('APP IS INITIALIZED') 
     var ranOnce = false  
     showGoToTopButton()
+
     
     window.onscroll = ()  => {
         console.log('scrolling')

@@ -80,7 +80,7 @@
 }
 
 .typing-text {
-    background-color: teal;
+    background-color: rgb(219, 109, 69);
     height: 75%;
     width: 100%;
     display: grid;

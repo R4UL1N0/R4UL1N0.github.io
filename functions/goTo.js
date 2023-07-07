@@ -1,4 +1,7 @@
-export function goTo() {
-    console.log("Let's go")
+function goTo(url) {
+    if (url != '') {
+        console.log(url)
+        window.location.href = url
+    }
+    
 }
-

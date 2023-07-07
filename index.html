@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./styles.css">
     <script type="module" src="./functions/typingFunction.js"></script>
-    <script type="script" src="./functions/goTo.js"></script>
     <script type="module" src="./app.js"></script>
     <title>Nothing Page</title>
 </head>
@@ -40,7 +39,7 @@
             
             <div class="bottom-parallax">
                 <div id="my-description">
-                    <div class="circled-photo"></div>
+                    <!-- <div class="circled-photo"></div> -->
                     <div id="description-text">
                         <div id="description-first">
                             <p>Lucas Raulino dos Santos</p>
@@ -48,18 +47,21 @@
                             <p>Creative developer</p>
 
                         </div>
-                        <div id="description-second">
-                            <img onclick="goTo(`https://instagram.com/sens_sature`)" class="icon-social-media" src="/assets/social_medias/instagram_3670125.png" alt="Instagram">
-                            <img onclick="goTo(`https://github.com/R4UL1N0`)"class="icon-social-media" src="/assets/social_medias/github_536452.png" alt="Github">
-                            <img onclick="goTo(``)" class ="icon-social-media" src="/assets/social_medias/linkedin_145807.png" alt="">
-                            <img onclick="goTo(``)" class="icon-social-media" src="/assets/social_medias/whatsapp_4494494.png" alt="">
+                        <div id="line-text"></div>
+                        <div id="social-container">
+                            <div class="social-icon">
+                                <img onclick="goTo(`https://instagram.com/sens_sature`)" class="icon-social-media" src="/assets/social_medias/instagram_3670125.png" alt="Instagram">
+                            </div>
+                            <div class="social-icon">
+                                <img onclick="goTo(`https://github.com/R4UL1N0`)"class="icon-social-media" src="/assets/social_medias/github_536452.png" alt="Github">
+                            </div>
+                            <div class="social-icon">
+                                <img onclick="goTo(`https://www.linkedin.com/in/lucas-raulino-245632a3/`)" class ="icon-social-media" src="/assets/social_medias/linkedin_145807.png" alt="">
+                            </div>
+                            <div class="social-icon">
+                                <img onclick="goTo(`tel:whatsapp:+5547996494695`)" class="icon-social-media" src="/assets/social_medias/whatsapp_4494494.png" alt="">
+                            </div>
 
-                            <script>
-                                function goTo(url) {
-                                    console.log(url)
-                                    window.location.href = url
-                                }
-                            </script>
                         </div>
                     </div>
                 </div>
@@ -92,13 +94,15 @@
         <div id="form-page" class="page">
             <form class="custom-form" action="">
                 <div class="container-h1">
-                    <h1>Bora fazer um projeto juntos?</h1>
-                    <p id="emoji-form">🎆</p>
+                    <h1>Me contrate para fazer seu aplicativo ou website!</h1>
+                    <!-- <p id="emoji-form">🎆</p> -->
                 </div>
                 <div id="inputs">
-                    <label for="">Ideia de projeto</label>
+                    <label for="">Seu nome:</label>
                     <input type="text">
-                    <label for="">Descreve seu projeto a vontade</label>
+                    <label for="">Seu e-mail</label>
+                    <input type="text">
+                    <label for="">Descreve seu projeto:</label>
                     <textarea name="description" cols="10" rows="10"></textarea>
                     <input class="form-submit" type="submit" value="Submit">
                 </div>
@@ -107,7 +111,6 @@
         <!-- THIRD PAGE -->
         <div id="boxes-animation-div" class="page page-three"></div>
     </div>
-    
-    
+    <script src="./functions/goTo.js" />
 </body>
 </html>

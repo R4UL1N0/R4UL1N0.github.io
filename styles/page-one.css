@@ -95,7 +95,7 @@
     flex-direction: row;
     align-items: center;
     padding: 2%;
-    justify-content: space-around;
+    justify-content: center;
 }
 
 .circled-photo {
@@ -106,47 +106,98 @@
     background-repeat: no-repeat;
     background-position-y: center;
     border-radius: 50%;
-    height: 150px;
-    width: 150px;
+    height: clamp(150px, 10vw, 60px);
+    width: clamp(150px, 10vw, 60px);
 }
 
 #description-text {
-    /* background-color: blue; */
-    height: 150px;
-    width: 80%;
-    display: grid;
-    grid-template-columns: 4fr 3fr;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
 
 }
 
+
+
 #description-first {
-    /* background-color: aqua; */
-    border-right: 2px solid white;
+    /* border-right: 2px solid white; */
     padding: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 #description-first p {
-    font-size: 1.5rem;
+    font-size: clamp(23px, 15vw, 10px);
     font-family: 'Rajdhani', 'Roboto';
     color: white;
     font-weight: 500;
 }
 
-#description-first p::before {
-    content: "* ";
+#line-text {
+    height: 100px;
+    width: 3px;
+    color: white;
 }
-#description-second {
+
+/* #description-first p::before {
+    content: "* ";
+} */
+
+#social-container {
     /* background-color: coral; */
-    padding: 40px;
+    padding: 10px;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    /* grid-template-rows: 1fr 1fr; */
 }
 
-.icon-social-media {
-    width: 70px;
-    height: 70px;
+/* #social-container::before {
+    box-shadow: 1px 2px 3px 4px rgba(20,20,20,0.4);
+} */
 
+.icon-social-media {
+    width: clamp(70px, 10vw, 30px);
+    height: clamp(70px, 10vw, 30px);
+
+}
+
+@media only screen and (max-width: 740px) {
+    #description-text {
+        /* grid-template-columns: 1fr; */
+        display: flex;
+        justify-content: center;
+
+    }
+
+    #description-first {
+        display:none;
+    }
+
+    #social-container {
+        display: flex;
+        flex-direction: row;
+    } 
+
+    .circled-photo {
+        display: none;
+    }
+
+}
+
+@media only screen and (max-width: 350px) {
+    #social-container {
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+    }
+}
+
+.social-icon {
+    padding: 5px;
+    
+}
+
+.social-icon:hover {
+    cursor: pointer;
 }
 
 

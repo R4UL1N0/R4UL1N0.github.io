@@ -1,14 +1,12 @@
 #form-page {
-    background-color: lightslategray !important;
+    background-color: gray !important;
+    height: 80vh !important;
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 10vh;
-    height: 80vh !important;
 }
 
 .custom-form {
-    width: 100vw;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -17,7 +15,20 @@
 
 #inputs {
     width: 40%;
+    display: flex;
+    flex-direction: column;
     text-align: left;
+}
+
+#inputs label {
+    text-align: left !important;
+}
+
+#inputs .form-submit {
+    display: flex;
+    align-self: center;
+    text-align: center !important;
+    font-weight: 700;
 }
 
 #form-page input {  
@@ -25,26 +36,59 @@
     border: 0;
     margin: 20px;
     height: 3em;
-    width: 80%;
+    width: 100%;
     padding: 20px;
     margin-left: 0;
     text-decoration-style: none;
 }
 
-#form-page h1 {
+.container-h1 h1 {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 4em;
+    font-size: 3em;
+    text-align: right;
+    color: black;
+    margin-bottom: 1em;
+    
 }
 
 .container-h1 {
     width: 30%;
+    display: flex;
+    align-items: center;
     text-align: center;
+}
+
+@media only screen and (max-width: 600px) {
+
+    #inputs {
+        width: 60%;
+    }
+
+    .custom-form {
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .container-h1 {
+        width: 80%;
+
+    }
+
+    .container-h1 h1 {
+        font-size: 2em;
+        text-align: center !important;
+    }
+
+    #emoji-form {
+        display: none;
+    }
 }
 
 #form-page label {
     font-size: 1.3em;
-    font-family: 'Rajdhani', 'Roboto';
-    text-decoration: underline black;
+    font-family: sans-serif;
+    /* text-decoration: underline black; */
 }
 
 #inputs textarea {
