@@ -81,6 +81,28 @@ body {
     width: 40px;
     background-color: white;
     border: 3px solid black;
+    cursor: pointer;
+}
+
+#brazil {
+    padding: 1px;
+    background-image: url('./assets/language_icons/brasilia_4628714.png');
+    background-size: cover;
+}
+
+#us {
+    background-image: url('./assets/language_icons/usa_4628635.png');
+    background-size: cover;
+}
+
+#france {
+    background-image: url('./assets/language_icons/france_4855771.png');
+    background-size: cover;
+}
+
+#spain {
+    background-image: url('./assets/language_icons/spain_4855742.png');
+    background-size: cover;
 }
 
 .line {
