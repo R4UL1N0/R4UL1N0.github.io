@@ -26,8 +26,11 @@
 
 #inputs .form-submit {
     display: flex;
-    align-self: center;
+    text-transform: uppercase;
+    align-self: flex-end;
+    justify-content: center;
     text-align: center !important;
+    font-size: 20px;
     font-weight: 700;
 }
 
@@ -83,6 +86,11 @@
     #emoji-form {
         display: none;
     }
+
+    #inputs .form-submit {
+        /* width: 100% !important;
+        justify-self: center !important; */
+    }
 }
 
 #form-page label {
@@ -102,6 +110,8 @@
 .form-submit {
     width: 100px !important;
     font-family: 'Rajdhani', 'Roboto';
+    display: flex;
+    justify-self: flex-end;
 }
 
 

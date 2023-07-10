@@ -1,6 +1,7 @@
 import { execTyping } from "./functions/typingFunction.js";
 import { animateBoxes } from "./functions/animateBoxes.js";
-
+// import { scrollToTheTop, hasScrolledBefore, showGoToTopButton } from './functions/scrollToTopButton.js' 
+import { getFormInfo } from './functions/getFormInfo.js'
 
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -9,9 +10,15 @@ document.addEventListener('DOMContentLoaded', () => {
 
 function initApp() {
     console.log('APP IS INITIALIZED') 
-    var ranOnce = false  
+    let ranOnce = false  
     showGoToTopButton()
+    
+    document.getElementById('btn-top').addEventListener('click', scrollToTheTop)
 
+    document.getElementById('custom-form').addEventListener('submit', function(e) {
+      e.preventDefault()
+      getFormInfo()
+    })
     
     window.onscroll = ()  => {
         console.log('scrolling')
@@ -22,45 +29,51 @@ function initApp() {
           ranOnce = true
         }
         // runOnScrollPosition(1500, animateBoxes)
-        // const btnScrollUp = document.getElementById('btn-top').addEventListener('click', scrollToTheTop)
+        
       };
         
 }   
 
+function scrollToTheTop() {
+  console.log('HI')
+  window.scrollTo({top: 0, behavior: 'smooth'});
+}
+
 let hasScrolledBefore = false;
 
 function showGoToTopButton() {
-    let mybutton = document.getElementById("btn-top");
+  let mybutton = document.getElementById("btn-top");
 
-    const opacityToOne = [
-        { opacity: 0 },
-        { opacity: 1 }
-      ];
-    
-      
-      const btnTime = {
-        duration: 2000,
-        iterations: 1,
-      }
-
-    if (document.body.scrollTop > 120 || document.documentElement.scrollTop > 120) {
-        mybutton.style.display = "block";
-        if (!hasScrolledBefore) {
-            mybutton.animate(opacityToOne, btnTime)
-            hasScrolledBefore = true
-        }
-      } else {
-        hasScrolledBefore = false
-        mybutton.style.display = "none";
+  const opacityToOne = [
+      { opacity: 0 },
+      { opacity: 1 }
+    ];
   
+    
+    const btnTime = {
+      duration: 2000,
+      iterations: 1,
+    }
+
+  if (document.body.scrollTop > 120 || document.documentElement.scrollTop > 120) {
+      mybutton.style.display = "block";
+      if (!hasScrolledBefore) {
+          mybutton.animate(opacityToOne, btnTime)
+          hasScrolledBefore = true
       }
+    } else {
+      hasScrolledBefore = false
+      mybutton.style.display = "none";
+
+    }
 
 }
 
-// function scrollToTheTop() {
-//     console.log('HI')
-//     window.scrollTo({top: 0, behavior: 'smooth'});
-// }
+
+
+
+
+
 
 
 
