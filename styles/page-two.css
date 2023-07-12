@@ -82,7 +82,7 @@
     }
 }
 
-.typing-text {
+#typing-text {
     background-color: rgb(219, 109, 69);
     /* height: 75%; */
     /* width: 100%; */
@@ -97,7 +97,7 @@
 
 
 
-.typing-title {
+#typing-title {
     font-size: clamp(2.7em, 10vw, 8em);
     text-align: center;
     margin-bottom: clamp(4px, 10vw, 10px);
@@ -107,7 +107,7 @@
     width: 100%;
 }
 
-.text-content {
+#text-content {
     column-count: 1;
     padding: 10px;
     font-size: clamp(1rem, 2.7vw, 2.5rem);

@@ -15,12 +15,18 @@
 
 .parallax-title{
     position: fixed;
-    top: 25%;
+    top: 20%;
     left: 50%;
     transform: translate(-50%, -50%);
     background-color: black;
     padding: 20px;
     border-radius: 10px;
+}
+
+@media only screen and (max-width: 1000px) {
+    .parallax-title {
+        top: 25%;
+    }
 }
 
 .parallax-title h1 {
