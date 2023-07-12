@@ -2,15 +2,16 @@
     background-color: gray !important;
     height: 80vh !important;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: space-around;
+    align-items: space-around;
 }
 
 .custom-form {
+    height: 100%;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    align-items: space-between;
+    align-items: center;
 }
 
 #inputs {
@@ -50,7 +51,7 @@
     font-size: 3em;
     text-align: right;
     color: black;
-    margin-bottom: 1em;
+    /* margin-bottom: 1em; */
     
 }
 
@@ -61,15 +62,18 @@
     text-align: center;
 }
 
-@media only screen and (max-width: 600px) {
-
-    #inputs {
-        width: 60%;
+@media only screen and (max-width: 320px) {
+    
+    .container-h1 h1 {
+        font-size: 2.3em;
     }
+}
+
+@media only screen and (max-width: 750px) {
 
     .custom-form {
         flex-direction: column;
-        justify-content: space-between;
+        justify-content: space-around;
         align-items: center;
     }
 
@@ -79,9 +83,27 @@
     }
 
     .container-h1 h1 {
-        font-size: 2em;
+        /* font-size: 2em; */
         text-align: center !important;
     }
+
+    #inputs {
+        width: 60%;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    /* #form-page {
+        height: 60vh;
+    } */
+
+    
+
+    
+
+    
+
+    
 
     #emoji-form {
         display: none;

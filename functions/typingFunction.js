@@ -43,7 +43,7 @@ async function typeLorem() {
   let hasScrollBeforeText = false
   
 export function execTyping() {
-    if (document.body.scrollTop > 700 || document.documentElement.scrollTop > 700) {
+    if (document.body.scrollTop > 500 || document.documentElement.scrollTop > 500) {
       if (!hasScrollBeforeText) {
         typeLorem()
         hasScrollBeforeText = true
