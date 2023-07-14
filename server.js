@@ -1,22 +1,23 @@
 import express from 'express'
-import { fileURLToPath} from 'url'
-import { dirname } from 'path'
+// import { fileURLToPath} from 'url'
+// import { dirname } from 'path'
 
-const app = express()
-
-const port = process.env.PORT || 3000
-
-const __filename = fileURLToPath(import.meta.url);
-const __dirname = dirname(__filename);
+export const app = express()
 
 
-app.use(express.static(__dirname));
+// const port = process.env.PORT || 3000
 
-app.get('/', (req, res) => {
-    console.log('OPENING PAGE')
-    res.sendFile('index.html', { root: __dirname});
-})
+// const __filename = fileURLToPath(import.meta.url);
+// const __dirname = dirname(__filename);
 
-app.listen(port, () => {
-    console.log('RUNNING')
-})
+
+// app.use(express.static(__dirname));
+
+// app.get('/', (req, res) => {
+//     console.log('OPENING PAGE')
+//     res.sendFile('index.html', { root: __dirname});
+// })
+
+// app.listen(port, () => {
+//     console.log('RUNNING')
+// })

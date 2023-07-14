@@ -1,3 +1,6 @@
+// import { sendEmail } from "../server_functions/nodemailer_functions.js"
+
+
 export function getFormInfo() {
     const nameForm = document.getElementById('name-form').value
     const emailForm = document.getElementById('email-form').value
@@ -12,4 +15,12 @@ export function getFormInfo() {
         email: emailForm,
         description: descriptionForm
     }
+
+    // // Compose email content
+    // const messageBody = `Name: ${nameForm}\nEmail: ${emailForm}\nMessage: ${descriptionForm}`;
+  
+    // // Send the email
+    // sendEmail(messageBody);
+
+
 }
