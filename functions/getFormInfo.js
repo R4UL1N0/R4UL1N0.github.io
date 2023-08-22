@@ -1,5 +1,4 @@
-// import { sendEmail } from "../server_functions/nodemailer_functions.js"
-
+import { SendEmailController } from '../controllers/send_email_controller.js'
 
 export function getFormInfo() {
     const nameForm = document.getElementById('name-form').value
@@ -10,17 +9,9 @@ export function getFormInfo() {
     console.log(emailForm)
     console.log(descriptionForm)
 
-    const formArray = {
-        name : nameForm,
-        email: emailForm,
-        description: descriptionForm
-    }
 
-    // // Compose email content
-    // const messageBody = `Name: ${nameForm}\nEmail: ${emailForm}\nMessage: ${descriptionForm}`;
+    const messageBody = `Name: ${nameForm}\nEmail: ${emailForm}\nMessage: ${descriptionForm}`;
   
-    // // Send the email
-    // sendEmail(messageBody);
-
+    SendEmailController.sendEmail(nameForm, messageBody)
 
 }

@@ -1,7 +1,6 @@
-// import {execTyping } from  "./functions/typingFunction.js";
 import "./functions/changeLanguage.js"
 // import './functions/animateBoxes.js'
-import './functions/getFormInfo.js'
+import { getFormInfo } from './functions/getFormInfo.js'
 
 document.addEventListener('DOMContentLoaded', () => {
     initApp()
@@ -30,7 +29,6 @@ function initApp() {
 
 
 function scrollToTheTop() {
-  console.log('HI')
   window.scrollTo({top: 0, behavior: 'smooth'});
 }
 
@@ -56,7 +54,6 @@ function showGoToTopButton() {
   }
 
   if (document.body.scrollTop > 120 || document.documentElement.scrollTop > 120) {
-    console.log('now u see it')
     if (!hasScrolledBefore) {
       mybutton.animate(opacityToOne, btnTime)
       hasScrolledBefore = true
