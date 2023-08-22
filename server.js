@@ -1,11 +1,9 @@
 import express from 'express'
-// import { fileURLToPath} from 'url'
-// import { dirname } from 'path'
 
 export const app = express()
 
 
-// const port = process.env.PORT || 3000
+const port = process.env.PORT || 3000
 
 // const __filename = fileURLToPath(import.meta.url);
 // const __dirname = dirname(__filename);
@@ -18,6 +16,10 @@ export const app = express()
 //     res.sendFile('index.html', { root: __dirname});
 // })
 
-// app.listen(port, () => {
-//     console.log('RUNNING')
-// })
+app.get('/', (req, res) => {
+    console.log('Hello from node')
+})
+
+app.listen(port, () => {
+    console.log('RUNNING')
+})

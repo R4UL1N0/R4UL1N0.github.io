@@ -1,11 +1,7 @@
-import { execTyping } from "./functions/typingFunction.js";
-import { animateBoxes } from "./functions/animateBoxes.js";
-// import { scrollToTheTop, hasScrolledBefore, showGoToTopButton } from './functions/scrollToTopButton.js' 
-import { getFormInfo } from './functions/getFormInfo.js'
-import { goToLink } from './functions/goTo.js'
-// import { changeLanguage } from './functions/changeLanguage.js'
-
-
+// import {execTyping } from  "./functions/typingFunction.js";
+import "./functions/changeLanguage.js"
+// import './functions/animateBoxes.js'
+import './functions/getFormInfo.js'
 
 document.addEventListener('DOMContentLoaded', () => {
     initApp()
@@ -13,7 +9,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
 function initApp() {
     console.log('APP IS INITIALIZED') 
-    execTyping()
+    // execTyping()
     
 
     document.getElementById('custom-form').addEventListener('submit', function(e) {
@@ -23,18 +19,15 @@ function initApp() {
     
     window.onscroll = ()  => {
         console.log('scrolling')
-        // 
         showGoToTopButton()
-        // if (document.documentElement.scrollTop > 1800) {
-        //   animateBoxes()
-        // }
-        // runOnScrollPosition(1500, animateBoxes)
         
       };
 
       document.getElementById('btn-top').addEventListener('click', scrollToTheTop)
         
 }   
+
+
 
 function scrollToTheTop() {
   console.log('HI')

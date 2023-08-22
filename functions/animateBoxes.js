@@ -1,4 +1,4 @@
-export function animateBoxes() {
+function animateBoxes() {
     const mainDiv = document.getElementById('boxes-animation-div')
     
     // const boxesLength = mainDiv.children.length
@@ -43,3 +43,5 @@ export function animateBoxes() {
     }
 
 }
+
+animateBoxes()

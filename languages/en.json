@@ -1,0 +1,11 @@
+{
+    "welcome-text": "Hello, world!",
+    "small-description": "Creative developer",
+    "description-title": "A bit about myself:",
+    "description-text": "I love to study programming in general, going from designing a web page to more low-level stuff, like creating APIs and enforcing security on applications. Besides programming, I also enjoy drawing, painting, creating illustrations with Illustrator, editing photos in Photoshop, and so on. My personal projets are all about putting design and programming together in a nice-looking way. I also love learning new languages, and my goal is to learn as many languages as possible! You can find the languages I'm studying there on top, and also switch languages if you will." ,
+    "form-title": "Hire me to make your website!",
+    "name-label": "Your name:",
+    "email-label": "Your e-mail:",
+    "project-label": "Describe your project:",
+    "submit-button": "Send"
+}

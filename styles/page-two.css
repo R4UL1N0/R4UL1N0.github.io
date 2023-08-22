@@ -19,8 +19,13 @@
     flex-direction: column;
     align-items: space-around;
     justify-content: space-around;
-    
+    padding: 2rem 0;
 
+}
+
+.moving-ball-container::after {
+    content: "";
+    background-color: antiquewhite;
 }
 
 .moving-ball {
@@ -92,6 +97,7 @@
     padding: 15px;
     align-items: space-between;
     justify-content: flex-start;
+    padding: 5em 2em;
 }
 
 

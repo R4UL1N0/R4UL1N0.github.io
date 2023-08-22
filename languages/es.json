@@ -1,0 +1,11 @@
+{
+    "welcome-text": "¡Hola, mundo!",
+    "small-description": "Desarrollador creativo",
+    "description-title": "Un poco sobre mí:",
+    "description-text": "I love to study programming general, going from designing a web page to more low-level stuff",
+    "form-title": "¡Contrátame para hacer tu sitio web!",
+    "name-label": "Tu nombre:",
+    "email-label": "Tu correo electrónico:",
+    "project-label": "Describa tu proyecto:",
+    "submit-button": "Enviar"
+}

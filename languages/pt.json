@@ -1,0 +1,11 @@
+{
+    "welcome-text": "Olá, mundo!",
+    "small-description": "Desenvolvedor criativo",
+    "description-title": "Um pouco sobre mim:",
+    "description-text": "Desde 2020 sigo estudando programação, descobrindo meu caminho, e aprendendo um pouco a cada dia. Busco usar meus conhecimentos de desing para tornar minhas aplicações mais interessantes, e para evoluir em ambas áreas. Estudo idiomas por hobby, e uns desses idiomas você encontra no topo da página, podendo também trocar de idiomas clicando na bandeira do país selecionado.",
+    "form-title": "Me contrate para fazer o seu site!",
+    "name-label": "Seu nome:",
+    "email-label": "Seu e-mail:",
+    "project-label": "Descreva seu projeto:",
+    "submit-button": "Enviar"
+}

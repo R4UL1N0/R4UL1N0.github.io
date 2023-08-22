@@ -5,9 +5,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./styles.css">
-    <!-- <script type="module" src="./functions/typingFunction.js"></script> -->
-    <script type="module" src="./app.js"></script>
-    <!-- <script type="module" src="./functions/goTo.js"></script> -->
     <title>Nothing Page</title>
 </head>
 <body>
@@ -22,19 +19,19 @@
             <div class="mountain-mask">
                 <nav id="navbar">
                     <div class="button-nav"></div>
-                    <div class="balls-nav">
-                        <div id ="brazil" class="ball"></div>
+                    <div class="language-nav">
+                        <div id ="brazil" class="language-icon" lang="pt"></div>
                         <div class="line"></div>
-                        <div id="us" class="ball"></div>
+                        <div id="us" class="language-icon" lang="en"></div>
                         <div class="line"></div>
-                        <div id="spain" class="ball"></div>
+                        <div id="spain" class="language-icon" lang="es"></div>
                         <div class="line"></div>
-                        <div id="france" class="ball"></div>
+                        <div id="france" class="language-icon" lang="fr"></div>
                     </div>
                     <div class="button-nav"></div>
                 </nav>
                 <div class="parallax-title">
-                    <h1>Hello, world.</h1>
+                    <h1 data-translate="welcome-text"></h1>
                 </div>
             </div>
             
@@ -45,35 +42,27 @@
                         <div id="description-first">
                             <p>Lucas Raulino dos Santos</p>
                             <p>E-mail: raulino.storage@gmail.com</p>
-                            <p>Creative developer</p>
+                            <p data-translate="small-description"></p>
 
                         </div>
                         <!-- <div id="line-text"></div> -->
                         <div id="social-container">
-                            <div class="social-icon">
-                                <img onclick="goTo(`https://instagram.com/sens_sature`)" class="icon-social-media" src="/assets/social_medias/instagram_3670125.png" alt="Instagram">
-                            </div>
-                            <div class="social-icon">
-                                <img onclick="goTo(`https://github.com/R4UL1N0`)"class="icon-social-media" src="/assets/social_medias/github_536452.png" alt="Github">
-                            </div>
-                            <div class="social-icon">
-                                <img onclick="goTo(`https://www.linkedin.com/in/lucas-raulino-245632a3/`)" class ="icon-social-media" src="/assets/social_medias/linkedin_145807.png" alt="">
-                            </div>
-                            <div class="social-icon">
-                                <img onclick="goTo(`tel:whatsapp:+5547996494695`)" class="icon-social-media" src="/assets/social_medias/whatsapp_4494494.png" alt="">
-                            </div>
+                            <a href="https://instagram.com/sens_sature" class="social-icon">
+                                <img class="icon-social-media" src="/assets/social_medias/instagram_3670125.png" alt="Instagram">
+                            </a>
+                            <a href="https://github.com/R4UL1N0" class="social-icon">
+                                <img class="icon-social-media" src="/assets/social_medias/github_536452.png" alt="Github">
+                            </a>
+                            <a href="https://www.linkedin.com/in/lucas-raulino-245632a3/" class="social-icon">
+                                <img class ="icon-social-media" src="/assets/social_medias/linkedin_145807.png" alt="">
+                            </a>
+                            <a href="tel:whatsapp:+5547996494695" class="social-icon">
+                                <img onclick="goingTo(`tel:whatsapp:+5547996494695`)" class="icon-social-media" src="/assets/social_medias/whatsapp_4494494.png" alt="">
+                            </a>
 
                         </div>
                     </div>
                 </div>
-                <!-- <div class="row">
-                    <div class="rounded-container">
-                        <div class=""></div>
-                    </div>
-                    <div class="rounded-container">
-                        <div class=""></div>
-                    </div>
-                </div> -->
             </div>
 
         </div>
@@ -85,9 +74,9 @@
                 <div class="moving-ball-three"></div>
             </div>
             <div id="typing-text">
-                <h1 id="typing-title"></h1>
+                <h1 data-translate="description-title" id="typing-title"></h1>
                 <div class="text-columns">
-                    <div id="text-content"></div>
+                    <div id="text-content" data-translate="description-text"></div>
                 </div>
             </div>
         </div>
@@ -95,15 +84,15 @@
         <div id="form-page" class="page">
             <form id="custom-form" class="custom-form" action="/submit-form" method="POST">
                 <div class="container-h1">
-                    <h1>Me contrate para fazer seu aplicativo ou website!</h1>
+                    <h1 data-translate="form-title"></h1>
                     <!-- <p id="emoji-form">🎆</p> -->
                 </div>
                 <div id="inputs">
-                    <label for="">Seu nome:</label>
+                    <label for="" data-translate="name-label"></label>
                     <input id ="name-form" type="text">
-                    <label for="">Seu e-mail</label>
+                    <label for="" data-translate="email-label"></label>
                     <input id="email-form" type="text">
-                    <label for="">Descreve seu projeto:</label>
+                    <label for="" data-translate="project-label"></label>
                     <textarea id="description-form" name="description" cols="10" rows="10"></textarea>
                     <input class="form-submit" type="submit" value="Submit">
                 </div>
@@ -112,6 +101,6 @@
         <!-- THIRD PAGE -->
         <!-- <div id="boxes-animation-div" class="page page-three"></div> -->
     </div>
-    
+    <script type="module" src="./app.js"></script>
 </body>
 </html>
