@@ -1,7 +1,7 @@
 export class SendEmailController {
 
   static sendEmail(name, message) {
-    const apiUrl = "http://email-sender-spring-api-production.up.railway.app/send-email"
+    const apiUrl = "https://email-sender-spring-api-production.up.railway.app/send-email"
 
     const postData = {
       to: "raulino.storage@gmail.com",
